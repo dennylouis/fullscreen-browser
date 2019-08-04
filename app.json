@@ -11,9 +11,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon2.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash2.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -26,7 +26,7 @@
     "ios": {
       "supportsTablet": true
     },
-    "description": "",
+    "description": "Minimal web browser for viewing websites with no browser chrome",
     "githubUrl": "https://github.com/dennylouis/fullscreen-browser"
   }
 }

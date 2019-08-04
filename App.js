@@ -5,7 +5,7 @@ import styled from "styled-components/native";
 export default function App() {
   const [uri, setUri] = useState("");
   const [showWebView, setShowWebView] = useState(false);
-  const [showLoader, setShowLoader] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   return (
     <Container>
@@ -23,7 +23,7 @@ export default function App() {
           />
         </SafeAreaView>
       )}
-      {showLoader && (
+      {loading && (
         <Overlay>
           <ActivityIndicator />
         </Overlay>
@@ -31,8 +31,8 @@ export default function App() {
       {showWebView && (
         <WebView
           source={{ uri }}
-          onLoadStart={() => setShowLoader(true)}
-          onLoadEnd={() => setShowLoader(false)}
+          onLoadStart={() => setLoading(true)}
+          onLoadEnd={() => setLoading(false)}
         />
       )}
     </Container>
