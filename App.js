@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     <Container>
-      <StatusBar hidden={showWebView && !showLoader} />
+      <StatusBar hidden={showWebView && !loading} />
       {!showWebView && (
         <SafeAreaView>
           <TextInput
